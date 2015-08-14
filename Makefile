@@ -84,6 +84,7 @@ $(var_dir)/spool/db-h $(scripts_dir) $(examples_dir) $(man8_dir); \
 	$(foreach html, $(htmls_in), $(install_data) $(html) $(etc_dir)/html;)
 	$(install_data) html/htaccess $(var_dir)/www/db/.htaccess
 	$(install_data) html/bugs.css $(var_dir)/www/css/bugs.css
+	$(install_data) html/1x1.png $(var_dir)/www/1x1.png
 
 	# install the CGIs
 	for cgi in $(cgis); do $(install_exec) $$cgi $(var_dir)/www/cgi; done
